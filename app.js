@@ -2,7 +2,7 @@
 const API_CONFIG = {
     loginUrl: 'https://backcvbgtmdesa.azurewebsites.net/api/login/authenticate',
     messagesUrl: 'https://backcvbgtmdesa.azurewebsites.net/api/Mensajes',
-    getMessagesUrl: 'http://localhost:3000/api/messages' // Backend local para obtener mensajes
+    getMessagesUrl: 'https://desarrollowebfinal.onrender.com/api/messages'
 };
 
 // Application State
