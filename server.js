@@ -4,7 +4,7 @@ const sql = require('mssql');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -12,10 +12,10 @@ app.use(express.json());
 
 // SQL Server Configuration
 const sqlConfig = {
-    server: 'svr-sql-ctezo.southcentralus.cloudapp.azure.com',
-    user: 'usr_DesaWebDevUMG',
-    password: '!ngGuast@360',
-    database: 'db_DesaWebDevUMG',
+    server: process.env.SQL_SERVER || 'svr-sql-ctezo.southcentralus.cloudapp.azure.com',
+    user: process.env.SQL_USER || 'usr_DesaWebDevUMG',
+    password: process.env.SQL_PASSWORD || '!ngGuast@360',
+    database: process.env.SQL_DATABASE || 'db_DesaWebDevUMG',
     options: {
         encrypt: true,
         trustServerCertificate: true,
