@@ -45,7 +45,7 @@ async function initializeDatabase() {
 }
 
 // SERIE III: Get Messages Endpoint
-app.get('/api/messages', async (req, res) => {
+app.get('/api/Mensajes', async (req, res) => {
     try {
         if (!pool) {
             return res.status(500).json({
@@ -90,7 +90,7 @@ async function startServer() {
 
     app.listen(PORT, () => {
         console.log(`🚀 Servidor backend iniciado en http://localhost:${PORT}`);
-        console.log(`📡 Endpoint de mensajes: http://localhost:${PORT}/api/messages`);
+        console.log(`📡 Endpoint de mensajes: http://localhost:${PORT}/api/Mensajes`);
         console.log(`💚 Health check: http://localhost:${PORT}/api/health`);
     });
 }
