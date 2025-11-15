@@ -2,7 +2,7 @@
 const API_CONFIG = {
     loginUrl: 'https://backcvbgtmdesa.azurewebsites.net/api/login/authenticate',
     messagesUrl: 'https://backcvbgtmdesa.azurewebsites.net/api/Mensajes',
-    getMessagesUrl: 'https://desarrollowebfinal.onrender.com/api/messages'
+    getMessagesUrl: 'https://examen-final-desaweb.onrender.com/api/Mensajes'
 };
 
 // Application State
